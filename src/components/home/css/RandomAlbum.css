@@ -1,0 +1,24 @@
+.random-container {
+  display: flex;
+  align-items: center;
+  margin: 2.5vh 20vh;
+  border-top: 2.5px solid #191717;
+  padding: 5vh 0;
+  border-bottom: 2.5px solid #191717;
+}
+
+.text {
+  flex: 1; 
+  margin-left: 20vh;
+}
+.image {
+  margin-right: 20vh;
+}
+
+.ra-img {
+  height: 40vh;
+  width: 40vh;
+}
+.stars{
+    color: rgb(178, 43, 47);
+}

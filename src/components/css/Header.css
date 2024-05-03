@@ -1,5 +1,5 @@
 .header-container {
-  margin: 2.5vh;
+  margin: 2.5vh 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -13,11 +13,12 @@
 .artists,
 .albums {
   color: #808080;
-  padding: 0.20em 0.4em 0.20em 0.4em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
   cursor: pointer;
+  margin: 0 5vh;
 }
 .home:hover,
 .home.active,
@@ -29,5 +30,5 @@
   background-color: rgb(35, 35, 35);
   background-image: url(https://i.ibb.co/DG2QQdq/nav-active.png);
   background-repeat: no-repeat;
-    background-position: bottom right, 98% 65%;
+  background-position: bottom right, 98% 65%;
 }

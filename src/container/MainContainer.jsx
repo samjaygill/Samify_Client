@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ArtistData from "../components/ArtistData";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../components/Home";
+import Home from "../components/home/Home";
 import Header from "../components/Header";
 
 function MainContainer() {
@@ -24,7 +24,7 @@ function MainContainer() {
     <Router>
         <Header />
         <Routes>
-          <Route path="/home" element={<Home artists={artists} />} />
+          <Route path="/" element={<Home artists={artists} />} />
           <Route path="/artists" element={<ArtistData artists={artists} />} />
         </Routes>
     </Router>
