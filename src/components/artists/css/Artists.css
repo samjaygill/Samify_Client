@@ -8,19 +8,16 @@
 
 .text-left {
   flex-direction: row-reverse;
-  /* margin-left: 20vh; */
 }
 
 .text-right {
   flex-direction: row;
-  /* margin-right: 20vh; */
   text-align: end;
 }
 
 .artist-img {
-  width: 200px; /* Adjust size as needed */
+  width: 200px; 
   height: auto;
-  /* margin: 0 20vh; */
   border: 3px solid #191717;
 }
 

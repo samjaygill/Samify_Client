@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ArtistData from "../components/artists/ArtistData";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../components/home/Home";
 import Header from "../components/Header";
