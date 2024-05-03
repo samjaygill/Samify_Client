@@ -4,7 +4,6 @@
   padding: 5vh 50vh;
   justify-content: space-between;
   border-top: 2.5px solid #191717;
-
 }
 
 .text-left {
@@ -17,9 +16,9 @@
 }
 
 .artist-img {
-  width: 200px; 
+  width: 200px;
   height: auto;
-  border: 3px solid #191717;
+  border: 2px solid #191717;
 }
 
 .artist-details {
