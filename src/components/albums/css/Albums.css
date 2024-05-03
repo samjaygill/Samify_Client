@@ -1,0 +1,21 @@
+.albums-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5vh 10vh;
+  justify-content: center;
+  border-top: 2.5px solid #191717;
+}
+.albums-card {
+  padding: 0 5vh;
+}
+.album-img {
+  width: 200px;
+  height: 200px;
+}
+li {
+  list-style: none;
+}
+.album-title {
+  margin: 1.5px 0 30px 0;
+  text-align: center;
+}
