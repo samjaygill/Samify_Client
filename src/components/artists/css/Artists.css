@@ -3,7 +3,8 @@
   align-items: center;
   padding: 5vh 50vh;
   justify-content: space-between;
-  border-bottom: 2.5px solid #191717;
+  border-top: 2.5px solid #191717;
+
 }
 
 .text-left {
