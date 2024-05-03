@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ArtistData from "../components/ArtistData";
+import ArtistData from "../components/artists/ArtistData";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../components/home/Home";
 import Header from "../components/Header";
+import ArtistList from "../components/artists/ArtistList";
 
 function MainContainer() {
   const [artists, setArtists] = useState([]);
@@ -25,7 +26,7 @@ function MainContainer() {
         <Header />
         <Routes>
           <Route path="/" element={<Home artists={artists} />} />
-          <Route path="/artists" element={<ArtistData artists={artists} />} />
+          <Route path="/artists" element={<ArtistList artists={artists} />} />
         </Routes>
     </Router>
   );

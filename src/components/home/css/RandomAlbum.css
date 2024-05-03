@@ -1,9 +1,8 @@
 .random-container {
   display: flex;
   align-items: center;
-  margin: 2.5vh 20vh;
+  padding: 5vh 40vh;
   border-top: 2.5px solid #191717;
-  padding: 5vh 0;
   border-bottom: 2.5px solid #191717;
 }
 
