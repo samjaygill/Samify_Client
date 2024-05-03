@@ -1,7 +1,7 @@
 .artist-item {
   display: flex;
   align-items: center;
-  padding: 5vh 50vh;
+  padding: 2.5vh 50vh;
   justify-content: space-between;
   border-top: 2.5px solid #191717;
 }
