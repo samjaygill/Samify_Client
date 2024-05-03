@@ -17,6 +17,7 @@
 .ra-img {
   height: 40vh;
   width: 40vh;
+  border: 2px solid #191717;
 }
 .stars{
     color: rgb(178, 43, 47);
