@@ -1,31 +1,34 @@
-import React, { useEffect, useState } from 'react'
-import ArtistData from '../components/ArtistData';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import ArtistData from "../components/ArtistData";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "../components/Home";
+import Header from "../components/Header";
 
 function MainContainer() {
-
   const [artists, setArtists] = useState([]);
 
-  useEffect(()=> {
+  useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8080/artists")
-        const artistData = await response.json()
-        setArtists(artistData)
+        const response = await fetch("http://localhost:8080/artists");
+        const artistData = await response.json();
+        setArtists(artistData);
       } catch (error) {
-        console.error("Error fetching data:", error)
+        console.error("Error fetching data:", error);
       }
-    }
-    fetchData()
-  }, [])
+    };
+    fetchData();
+  }, []);
 
   return (
-<Router>
-      <Routes>
-        <Route path="/" element={<ArtistData artists={artists}/>} />
-      </Routes>
+    <Router>
+        <Header />
+        <Routes>
+          <Route path="/home" element={<Home artists={artists} />} />
+          <Route path="/artists" element={<ArtistData artists={artists} />} />
+        </Routes>
     </Router>
-  )
+  );
 }
 
-export default MainContainer
+export default MainContainer;
