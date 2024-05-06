@@ -1,5 +1,7 @@
 import React from 'react'
 import Artists from './Artists';
+import { Link } from "react-router-dom";
+
 
 function ArtistList({ artists }) {
   const sortedArtists = artists.slice().sort((a, b) => {
@@ -16,7 +18,13 @@ function ArtistList({ artists }) {
   return (
     <div>
       {sortedArtists.map((artist, index) => (
+            <Link
+            to={`/artists/${index}`}
+            className="artist-card"
+            key={index}
+          >
         <Artists key={artist.id} artist={artist} index={index} />
+        </Link>
       ))}
     </div>
   );

@@ -4,6 +4,7 @@ import Home from "../components/home/Home";
 import Header from "../components/Header";
 import ArtistList from "../components/artists/ArtistList";
 import AlbumList from "../components/albums/AlbumList";
+import ArtistCard from "../components/artists/ArtistCard";
 
 function MainContainer() {
   const [artists, setArtists] = useState([]);
@@ -27,8 +28,8 @@ function MainContainer() {
         <Routes>
           <Route path="/" element={<Home artists={artists} />} />
           <Route path="/artists" element={<ArtistList artists={artists} />} />
+          <Route path="/artists/:id" element={<ArtistCard />} />
           <Route path="/albums" element={<AlbumList artists={artists} />} />
-
         </Routes>
     </Router>
   );
