@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./css/AlbumCard.css";
 import Rating from "../home/Rating";
 
@@ -29,6 +29,9 @@ function AlbumCard() {
     <div className="album-card-container">
       <div className="alc-info">
         <h2>{album.name}</h2>
+        <Link to={`/artists/${album.artist.id}`} className="album-artist-link">
+              <h4 className="ac-name">{album.artist.stageName}</h4>
+            </Link>
         <p>Released: {album.releaseDate}</p>
         <p>{album.genre}</p>
         <p>

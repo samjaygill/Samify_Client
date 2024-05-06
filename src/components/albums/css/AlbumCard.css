@@ -24,3 +24,9 @@
   text-align: end;
   padding-right: 40px;
 }
+.album-artist-link{
+    text-decoration: none;
+}
+.ac-name:hover{
+    color: rgb(178, 43, 47);
+}
