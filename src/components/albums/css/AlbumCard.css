@@ -1,0 +1,26 @@
+.album-card-container {
+  padding: 4vh 10vh;
+  border-top: 2.5px solid #191717;
+  border-bottom: 2.5px solid #191717;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.song-title {
+  margin: 2.5px;
+}
+.song-list {
+  list-style: decimal;
+  margin-left: 5px;
+}
+.album-card-img {
+  height: 400px;
+  width: 400px;
+  margin: 0 2vh;
+  border: 2px solid #191717;
+}
+.alc-info {
+  text-align: end;
+  padding-right: 40px;
+}
