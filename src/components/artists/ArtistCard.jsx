@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function ArtistCard() {
     const { id } = useParams();
@@ -31,6 +31,16 @@ function ArtistCard() {
       <p>Real Name: {artist.realName}</p>
       <p>Location: {artist.location}</p>
       <p>Bio: {artist.bio}</p>
+      {artist.albums.map((album) => (
+        <Link to={`/albums/${album.id}`} className="aa-link">
+          <li key={album.id}>
+            <div className="aa-card">
+            <img src={album.albumImg} alt={album.name} className="aa-img" />
+            <h4 className="aa-title">{album.name}</h4>
+          </div>
+          </li>
+          </Link>
+        ))}
     </div>
   </div>
   )
