@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/RandomAlbum.css"
 import Rating from "./Rating";
+import { Link } from "react-router-dom";
 
 function RandomAlbum({ artists }) {
   if (!artists || !artists.length) {
@@ -24,6 +25,7 @@ function RandomAlbum({ artists }) {
   const randomAlbum = randomArtist.albums[randomAlbumIndex];
 
   return (
+    <Link to={`/albums/${randomAlbum.id}`} className="album-link">
     <div className="random-container">
       <div className="text">
         <h4>{randomAlbum.name}</h4>
@@ -35,6 +37,7 @@ function RandomAlbum({ artists }) {
         <img src={randomAlbum.albumImg} alt={randomAlbum.name} className="ra-img" />
       </div>
     </div>
+    </Link>
   );
 }
 
