@@ -25,3 +25,9 @@
 .artist-details {
   flex: 1;
 }
+.artist-link {
+  text-decoration: none;
+}
+.artist-card {
+  text-decoration: none;
+}

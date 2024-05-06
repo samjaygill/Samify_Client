@@ -1,0 +1,53 @@
+.aa-link {
+  text-decoration: none;
+}
+
+.artist-card-container {
+  padding: 4vh 10vh 2vh 10vh;
+  border-top: 2.5px solid #191717;
+}
+
+.artist-card-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-detail-img {
+  width: 300px;
+  height: 300px;
+  margin-right: 25px;
+  border: 2px solid #191717;
+}
+.artist-detail-info {
+  margin-left: 25px;
+}
+
+.ac-album-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+.aa-link {
+  text-decoration: none;
+  margin: 0 1vh;
+}
+
+.aa-card {
+  width: 150px; /* Adjust width of album card */
+  margin-right: 20px; /* Add spacing between album cards */
+}
+
+.aa-img {
+  width: 100%; /* Make image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #191717;
+}
+
+.aa-title {
+  margin-top: 1px; /* Add spacing between image and title */
+  text-align: center; /* Center title */
+  font-size: 14px;
+}
