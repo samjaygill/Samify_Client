@@ -31,7 +31,6 @@ function ArtistCard() {
       <p>Real Name: {artist.realName}</p>
       <p>Location: {artist.location}</p>
       <p>Bio: {artist.bio}</p>
-      {/* Add more details as needed */}
     </div>
   </div>
   )
