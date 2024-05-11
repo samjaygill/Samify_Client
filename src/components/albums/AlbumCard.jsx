@@ -32,8 +32,8 @@ function AlbumCard() {
         <Link to={`/artists/${album.artist.id}`} className="album-artist-link">
               <h4 className="ac-name">{album.artist.stageName}</h4>
             </Link>
-        <p>Released: {album.releaseDate}</p>
-        <p>{album.genre}</p>
+        <p className="ac-released">Released: {album.releaseDate}</p>
+        <p className="ac-genre">{album.genre}</p>
         <p>
           <Rating rating={album.rating} />
         </p>

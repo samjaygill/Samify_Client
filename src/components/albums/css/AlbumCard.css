@@ -14,6 +14,9 @@
   list-style: decimal;
   margin-left: 5px;
 }
+.song-ul {
+  margin: 0;
+}
 .album-card-img {
   height: 400px;
   width: 400px;
@@ -24,9 +27,14 @@
   text-align: end;
   padding-right: 40px;
 }
-.album-artist-link{
-    text-decoration: none;
+.album-artist-link {
+  text-decoration: none;
 }
-.ac-name:hover{
-    color: rgb(178, 43, 47);
+.ac-name:hover {
+  color: rgb(178, 43, 47);
+}
+.ac-name,
+.ac-released,
+.ac-genre {
+  margin: 2vh 0;
 }
